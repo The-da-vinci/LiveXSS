@@ -15,7 +15,6 @@ function get_irc_log()
 		if (file) {
 			xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
-				/* Ew javascript is gross */
 				if (this.readyState == 4) {
 					if (this.status == 200) {
 						element.innerHTML = this.responseText;
